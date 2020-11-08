@@ -1,5 +1,6 @@
 package com.thoughtworks.capability.demospringioccontainer;
 
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 @Service
@@ -8,6 +9,7 @@ public class GreetingService {
     private final Foo foo;
     private final Bar bar;
 
+    @Autowired
     public GreetingService(Foo foo, Bar bar) {
         this.foo = foo;
         this.bar = bar;
