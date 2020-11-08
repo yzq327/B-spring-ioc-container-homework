@@ -9,7 +9,6 @@ public class GreetingService {
     private final Foo foo;
     private final Bar bar;
 
-    @Autowired
     public GreetingService(Foo foo, Bar bar) {
         this.foo = foo;
         this.bar = bar;
