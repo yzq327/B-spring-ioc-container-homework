@@ -9,13 +9,13 @@ public class GreetingController {
 
     private final GreetingService greetingService;
 
-    @Autowired
     public GreetingController(GreetingService greetingService) {
         this.greetingService = greetingService;
     }
 
     @GetMapping("/greet")
     public String greet() {
+        System.out.println("Singleton Bean created");
         return greetingService.sayHi();
     }
 
